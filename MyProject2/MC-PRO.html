@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<title>MC_word-pro.com</title>
+    <style>
+     *{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "Poppins", sans-serif;
+}
+
+body{
+	background: #171718;
+}
+
+.navbar{
+	width: 80%;
+	margin: 5px 10%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 25px 20px;
+}
+
+.logo{
+	font-size: 37px;
+	line-height: 56px;
+	font-family: "Poppins",sans-serif;
+	text-decoration: none;
+	background: linear-gradient(90deg, blue
+, lime, red);
+	background-clip: text;
+	color: transparent;
+}
+
+.menu{
+	list-style: none;
+	display: flex;
+	align-items: center;
+	font-family: "Poppins", sans-serif;
+}
+
+.menu-item{
+	display: flex;
+	align-items: center;
+	margin: auto 15px;
+	color: #707070;
+}
+
+.menu-item > .menu-link{
+	color: #707070;
+	line-height: 30px;
+	font-size: 20px;
+	font-weight: 500;
+	text-decoration: none;
+}
+
+.menu-item > .active{
+	color: #3C82F4;
+}
+
+.mx-1{
+	margin: auto 5px;
+}
+
+.mx-2{
+	margin: auto 10px;
+}
+
+.w-6{
+	width:652;
+}
+
+
+.buttons{
+	display: flex;
+	align-items: center;
+}
+
+.btn{
+	color: #707070;
+	font-size: 20px;
+	line-height: 30px;
+	border-radius: 10px;
+	cursor: pointer;
+	padding: 8px  15px;
+	text-decoration: none;
+}
+
+button.dark{
+	background: transparent;
+	border: none;
+	text-decoration: none;
+}
+
+button.primary{
+	color:white;
+	background: #306EF7;
+	border: 1px solid #306EF7;
+	text-decoration: none;
+}
+
+.none{
+	text-decoration: none;
+	color: gainsboro;
+}
+
+.hero-section{
+	width: 100%;
+	height: 80vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.hero-headline{
+	text-align: center;
+}
+
+h1.hero-text{
+	font-size: 112px;
+	background: linear-gradient(90deg, deepskyblue
+, red, lime);
+	background-clip: text;
+	color: transparent;
+	font-weight: 700;
+	line-height: 88px;
+
+}
+
+h2.hero-text{
+	font-size: 80px;
+	background: linear-gradient(90deg, #FE6783
+, #FFBF84, orange);
+	background-clip: text;
+	color: transparent;
+
+}
+
+.text-small{
+	font-size: 30px;
+	font-weight: 500;
+	line-height: 40px;
+	color: white;
+	text-align: center;
+}
+
+.padding-2{
+	padding: 8px  15px;
+}
+
+.btn-outline{
+	border: 1px solid #707070;
+	background: transparent;
+	font-size: 15px;
+	font-weight: 400;
+}
+
+.my-1{
+   margin: 10px 0;
+}
+
+
+.my-2{
+   margin: 20px 0;
+}
+
+.my-3{
+   margin: 30px 0;
+}
+
+.round-parent{
+	width: 20px;
+	height: 20px;
+	line-height: 28.6px;
+	border-radius: 100%;
+	background: rgba(0, 255, 0, 0.3);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.round-child{
+	width: 10px;
+	height: 10px;
+	line-height: 28.6px;
+	border-radius: 100%;
+	background: #0FC65C;
+}
+
+.icon-text{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #707070;
+	font-size: 20px;
+	line-height: 37px;
+	font-weight: 400;
+
+}
+
+.bold{
+  font-weight: 700;
+  line-height: 38px;
+  color: white;
+}
+
+.text-healine{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 40px auto;
+}
+
+
+.text-healine > h1{
+	margin-top:30px ;
+    font-size: 50px;
+    color: white;
+}
+
+.reasons{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+	color: white;
+}
+
+.why-reasion{
+   margin: auto 30px;
+   text-align: center;
+}
+
+.why-reasion > h1{
+   font-size: 25px;
+   font-weight: 600;
+   line-height: 52px;
+}
+
+.why-reasion > p{
+	color: #707070;
+	line-height: 33px;
+	font-weight: 400;
+	font-size: 16px;
+}
+
+
+.emoji-text{
+	display: flex;
+	align-items: center;
+}
+
+.step-1{
+	margin-top: 100px;
+}
+
+.text-step{
+	font-size: 20px;
+	font-weight: 600;
+	color: #3D82F2;
+}
+
+.text-gray{
+	color: #707070;
+}
+
+.step-2{
+	width: 80%;
+	margin: 20px 10%;
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
+}
+
+.col{
+	width: 35%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.home-text{
+	color: white;
+	font-size: 18px;
+	line-height: 45px;
+	font-weight: thin;
+}
+
+.text-box{
+	color: white;
+	line-height: 40px;
+	padding: 30px auto;
+}
+
+.content{
+	font-size: 45px;
+	font-weight: 600;
+	line-height: 70px;
+}
+
+.text-blue{
+	color: #3C82F4;
+}
+
+.list{
+	color: white;
+	margin: 20px 0;
+}
+
+li::marker{
+  background: #2D2D2D;
+  width: 10px;
+  height: 10px;
+  border: none;
+  border-radius: 100%;
+}
+
+.mr-1{
+	margin-right: 10px;
+}
+
+.ml-1{
+	margin-left: 10px;
+}
+
+.line-h-3{
+	line-height: 30px;
+}
+
+.my-4{
+	margin: 40px 0;
+}
+
+.text-center{
+	text-align: center;
+}
+
+.text-green{
+	color: #0FC65C;
+	font-size: 17px;
+	line-height: 45px;
+	font-weight: 400;
+}
+
+.flex{
+	display: flex;
+}
+
+.justify-center{
+	justify-content: center;
+}
+
+.items-center{
+	align-items: center;
+}
+
+.flex-col{
+	flex-direction: column;
+}
+
+.text-white{
+	color: white;
+}
+
+.w-100{
+	width: 100%;
+	border: 5px outset green;
+	border-radius: 20px;
+	
+}
+
+.headgett{
+	background: -o-linear-gradient(90deg, blue, lime, red);
+	background-clip: text;
+	color: transparent;
+}
+
+.audience{
+	width: 100%;
+	height: 500px;
+	background-image: url(./images/Image_2.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.justify-between{
+	justify-content: space-between;
+}
+
+.gett{
+	border: 5px outset green;
+	border-radius: 20px;
+}
+
+.gasp{
+	border: 5px outset green;
+	border-radius: 20px;
+}
+
+.wild{
+	border: 5px outset green;
+	border-radius: 20px;
+}
+
+footer{
+	width: 80%;
+	margin: 30px 10%;
+}   
+    </style>
+</head>
+<body>
+<header class="navbar">
+	<h1><a class="logo" href="https://mcpehub.org/download-mcpe/" target="_blank">Minecraft</a></h1>
+	<ul class="menu">
+		<li class="menu-item">
+			<a class="menu-link" href="https://www.curseforge.com/minecrafT/search?page=1&pageSize=20&sortBy=relevancy&class=mc-mods" target="_blank">Moods</a>
+			<i class="fa fa-chevron-down mx-1"></i>
+		</li>
+		<li class="menu-item">
+			<a class="menu-link" href="https://www.renderforest.com/minecraft-animation-maker" target="_blank">Animations</a>
+		</li>
+		<li class="menu-item">
+			<a class="menu-link active" href="https://www.minecraftskins.com/" target="_blank">Skins</a>
+		</li>
+		<li class="menu-item">
+			<a class="menu-link" href="https://mcpedl.com/category/addons/" target="_blank">Addons</a>
+		</li>
+	</ul>
+
+	<div class="buttons">
+		<button class="btn dark"><a class="none" href="https://education.minecraft.net/ru-ru" target="_blank">Education</a></button>
+		<button class="btn primary"><a class="none" href="https://minecraft.fandom.com/wiki/Minecraft_Wiki#:~:text=Minecraft%20is%20a%203D%20sandbox,play%2C%20allowing%20for%20countless%20possibilities." target="_blank">More</a></button>
+	</div>
+</header>
+
+<section class="hero-section">
+
+	<div class="hero-headline">
+	<h1 class="hero-text">Own your World_.</h1>
+	<h2 class="hero-text">Your Adventures and Creates don't delate!<br>
+                     '_'</h2>
+    </div>
+
+	<div>
+		<p class="text-small">Our addons and moods<br>
+a don't lie Players.</p>
+     
+     <div class="buttons my-3">
+     	<button class="btn mx-2 w-6 primary">Get Packs Now</button>
+     	<button class="btn btn-outline w-6 mx-2">Other Offers</button>
+     </div>
+     
+	  <div class="icon-text">
+	     <div class="round-parent">
+	     	<div class="round-child"></div>
+	     </div>
+	     <p>
+	     	<span class="bold mx-1">10000+</span>
+	     	Playersrs buy skins have already started
+	     </p>
+	  </div>
+	</div>
+</section>
+<div>
+	<a href="#"></a><img src="./images/fax.jpg" width="70%" height="40%" style="margin: 0px 250px;" alt="" class="flex justify-content gasp"></a>
+</div>
+<section class="section-2">
+	<div class="text-healine">
+		<h1 class="headget">Why Players Love MC_word</h1>
+
+		<div class="reasons">
+		<div class="why-reasion">
+			<div class="emoji-text">
+			<img src="./images/Smile_emoji.png">
+			<h1 class="mx-1">Infinite Skins</h1>
+		    </div>
+			<p>Never worry about losing your character.</p>
+		</div>
+		<div class="why-reasion">
+			<div class="emoji-text">
+			<img src="./images/Happy_emoji.png">
+			<h1 class="mx-1">Famous moods</h1>
+		    </div>
+			<p>always our moods great.</p>
+		</div>
+		<div class="why-reasion">
+			<div class="emoji-text">
+			<img src="./images/Party_emoji.png">
+			<h1 class="mx-1"> More Items</h1>
+		    </div>
+			<p>Spend less time on marketplaces</p>
+		</div>
+	</div>
+
+	</div>
+</section>
+<div>
+	<img src="images/images.jfif" width="100%" height="600px" class="gett">
+</div>
+<section class="step-1">
+	<div class="text-healine">
+		<p class="text-step">Part 1</p>
+		<h1>Choose Your Seeds</h1>
+		<p class="text-gray">Bring all of your blocks together and get a World that<br>automatically updates whenever you create anywhere online.</p>
+		<button class="my-2 btn btn-outline">View Our Website Sources</button>
+	</div>
+
+</section>
+
+<section class="step-2">
+	
+	<div class="col">
+		<p class="home-text">Your World</p>
+		<div class="text-box">
+			<h1 class="content">
+				Your buildings
+			</h1>
+			<h1 class="content">All in <span class="text-blue">One Spot</span></h1>
+		</div>
+		<ol class="list">
+			<li>Bring all of your maps together into one seed.</li>
+			<li>Your World automatically updates whenever you create.</li>
+		</ol>
+
+		<div class="buttons my-3">
+			<button class="btn primary mr-1">Get Buildings Now</button>
+			<button class="btn btn-outline ml-1">View a Seeds</button>
+		</div>
+
+	</div>
+
+	<div class="col">
+		<img src="./images/imagesm.jfif" class="gasp">
+	</div>
+
+</section>
+
+<section class="step-2 my-3">
+	<div class="text-healine">
+		<p class="text-step">Part 2</p>
+		<h1>Share Your Adventure</h1>
+		<p class="text-gray text-center">Share your Wavium Mines link with your followers, and <br>we'll handle the rest.</p>
+	</div>
+</section>
+<section class=" my-3">
+	<div class="step-2">
+	<div class="col">
+		<p class="text-green"> One Link</p>
+		<div class="text-box">
+			<h1 class="content text-gray">All You Create</h1>
+			<h1 class="content">One Link</h1>
+		</div>
+		<img src="./images/wild-update.jpeg" class="my-3 wild">
+	</div>
+	<div class="col">
+		<div class="col">
+			<p class="text-green"> Collect Subscribres</p>
+			<div class="text-box">
+				<h1 class="content text-gray">
+				Emails @e<br>
+				Logins #s</h1>
+				<h1 class="content">All Yours</h1>
+			</div>
+	</div>
+	</div>
+</div>
+	<div class="my-2 flex justify-center">
+	<button class="btn primary">Get Addons</button>
+	</div>
+</section>
+<section class="step-2 my-3">
+	<div class="text-healine">
+		<p class="text-step">Part 3</p>
+		<h1> Send Accaunts & Logins</h1>
+		<p class="text-gray text-center">No more going through a social platform. Reach and engage <br>
+		Your Minecraft directly over email and text message.</p>
+	</div>
+</section>
+<section class="step-2">
+	
+	<div class="col">
+		<p class="home-text">Create & Share</p>
+		<div class="text-box">
+			<h1 class="content">
+				Reach your
+			</h1>
+			<h1 class="content"> Buildings <span class="text-blue">Directly</span></h1>
+		</div>
+		<ol class="list">
+			<li>Endered content or create something new to share.. </li>
+			<li>Share packs over email, text message or your cards.</li>
+		</ol>
+
+		<div class="buttons my-3">
+			<button class="btn primary mr-1">Get Buildings Now</button>
+			<button class="btn btn-outline ml-1">View a Animations</button>
+		</div>
+
+	</div>
+
+	<div class="col">
+		<img src="./images/mc.jfif" class="gasp">
+	</div>
+
+</section>
+<section class="my-3 ">
+	<h1 class="content text-center text-white" >Experts Agree</h1>
+	<img src="./images/MinecraftLegends.avif" width="80%" height="600px" class="w-100" style="margin-top: 30px;">
+</section>
+<section class="my-3 audience flex items-center justify-center ">
+	<h1 class="content text-center text-white" >We've helped over 1,0000 Players<br>
+	reclaim control of their Minecraft</h1>
+</section>
+<section class="flex flex-col items-center justify-content">
+	<img src="./images/images.jfif" width="100px" class="my-2 gasp">
+	<div>
+		<h1 class="content text-white">
+			Get Started Now
+		</h1>
+		<p class="text-white">
+			Setup is easy and takes under 5 minutes
+		</p>
+		<div class="my-3 flex justify-center">
+		<button class="btn primary">Get Started</button>
+		</div>
+		<div class="icon-text">
+			<div class="round-parent">
+				<div class="round-child"></div>
+			</div>
+			<p>
+				<span class="bold mx-1">10000+</span>
+				Playerss have already started
+			</p>
+   
+		 </div>
+		</div>
+		<footer class="flex items-center justify-between">			
+			<a class="logo" href="https://youtube.com/ethananimatez" target="_blank"><img src="./images/Logo.png" width="35px"> Minecraft Animation</a>
+			<p class="text-gray"><a href="https://twitter.com/Minecraft" target="_blank">    page down-up</a></p>
+			<ul class="menu">
+				<li class="menu-item">
+					<a class="menu-link" href="https://bugs.mojang.com/secure/Dashboard.jspa" target="_blank">About</a>
+				</li>
+				<li class="menu-item">
+					<a class="menu-link active" href="#">Pricing</a>
+				</li>
+				<li class="menu-item">
+					<a class="menu-link" href="http://127.0.0.1:5500/front/MyProject2/projectb.html" target="_blank">Blog</a>
+				</li>
+				<li class="menu-item">
+					<a class="menu-link" href="https://www.minecraft.net/en-us/store/minecraft-deluxe-collection-pc" target="_blank">Sign In</a>
+				</li>
+			</ul>
+			</div>
+		</footer>
+</section>
+</body>
+</html>
